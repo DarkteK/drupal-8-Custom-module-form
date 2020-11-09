@@ -1,0 +1,14 @@
+custom-forms_benefits-request-form:
+  version: 1.0
+  css:
+    theme:
+      css/benefits-request-form.css: {}
+      https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css: { type: external }
+  js:
+    js/benefits-request-form.js: {}
+    https://code.jquery.com/ui/1.12.1/jquery-ui.min.js: { type: external, minified: true }
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+    - core/drupalSettings
+    - core/drupal.ajax

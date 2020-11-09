@@ -1,0 +1,48 @@
+{#
+/**
+* @file
+* Default theme implementation to display a block.
+*
+* @see template_preprocess_block()
+*
+* @ingroup themeable
+*/
+#}
+
+{% set classes = [
+    'clear-both',
+    'container',
+] %}
+
+<div{{attributes.addClass(classes)}}>
+    <div class="left-panel">
+        Please fill out all fields in the form to request a proposal.
+    </div>
+    <div class="center-panel">
+    </div>
+    <div class="right-panel">
+        {{ form }}
+    </div>   
+</div>
+
+<div id="block-benefits_request_form-dialog" >
+	<div class="container">
+		<div class="modal-dialog">
+			<div class="modal-content">
+                <div class="title">
+                    <img src="/sites/default/files/svg/2020-03/legal_1.svg">
+                    <p class="modal-title"><strong>{{ 'Benefits Plan'|t }}</strong>{{ ' request has been submitted!'|t }}</p>
+                </div>
+				<div class="modal-description">
+					{{ 'Your request has been received! Our customer service team will reach out to you soon. We look forward to partnering with you and your employees.'|t }}
+				</div>
+                <div class="modal-footer">
+                    <a name="close" id="close" class="close-modal-btn" href="#" role="button">CONTINUE SHOPPING</a>
+                </div>
+			</div>
+			<div class="modal-close">
+				<a class="close-modal-btn" href="#">X</a>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,5 @@
+name: 'Custom Forms'
+type: module
+description: 'Renders and handlers Forms into pages like blocks'
+core: 8.x
+package: 'Custom'

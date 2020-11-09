@@ -1,0 +1,222 @@
+/**
+ * Blocks - Forms
+ * - 01 - Benefits Request Form General
+ * - 02 - Benefits Request Form Modal
+ */
+
+/*------------------------------------*\
+  01 - Benefits Request Form General
+\*------------------------------------*/
+
+.benefits-request-form {
+  background-color: #ffffff;
+  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.0686189);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.benefits-request-form label {
+  color: #000000 !important; /*really needed*/
+}
+
+.benefits-request-form .center-panel {
+  margin-top: 40px;
+  height: 450px; /*your own value to suit your content*/
+  width: 1px;
+  background-image: -webkit-linear-gradient(top, #ffffff, #f1f3f4, #ffffff);
+  background-image: -moz-linear-gradient(top, #ffffff, #f1f3f4, #ffffff);
+  background-image: -ms-linear-gradient(top, #ffffff, #f1f3f4, #ffffff);
+  background-image: -o-linear-gradient(top, #ffffff, #f1f3f4, #ffffff);
+  background-image: linear-gradient(top, #ffffff, #f1f3f4, #ffffff);
+}
+
+.benefits-request-form .left-panel {
+  font-family: Rubik, sans-serif;
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 31px;
+  letter-spacing: 1px;
+  max-width: 40%;
+  padding: 64px 52px 30px 52px;
+  flex: 0 0 40%;
+}
+
+.benefits-request-form .right-panel {
+  display: flex;
+  flex: 0 0 55%;
+  max-width: 55%;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+  padding: 24px;
+  margin: 0 20px;
+  border: 0;
+}
+
+.benefits-request-form .right-panel .form-item {
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 50%;
+  padding: 0 30px;
+  justify-content: flex-end;
+}
+
+.benefits-request-form .right-panel .form-item input {
+  border-radius: 3px;
+  height: 44px;
+  margin: 0;
+}
+
+.benefits-request-form .right-panel .form-item #edit-state,
+.benefits-request-form .right-panel .form-item #edit-product,
+.benefits-request-form .right-panel .form-item #edit-time {
+  height: 44px;
+  border-radius: 3px;
+  margin: 0;
+}
+
+.benefits-request-form .right-panel .form-submit {
+  background: #ff3900;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.0321788);
+  color: #ffffff;
+  font-size: 14px;
+  height: 46px;
+  margin-left: 28px;
+  text-transform: uppercase;
+  width: 154px;
+}
+
+.messages.messages--error {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .benefits-request-form .left-panel {
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+
+  .benefits-request-form .right-panel {
+    flex: 0 0 100%;
+    max-width: 100%;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    margin: 0;
+  }
+
+  .benefits-request-form .right-panel .form-item {
+    display: block;
+    flex: 0 1 100%;
+    padding: 0 30px;
+  }
+
+  .benefits-request-form .center-panel {
+    display: none;
+  }
+}
+
+/*------------------------------------*\
+  02 - Benefits Request Form Modal
+\*------------------------------------*/
+
+#block-benefits_request_form-dialog {
+  background-color: rgba(0, 0, 0, 0.5);
+  bottom: 0;
+  display: none;
+  left: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1050;
+}
+
+#block-benefits_request_form-dialog .container {
+  display: flex;
+  min-height: 100vh;
+}
+
+#block-benefits_request_form-dialog .modal-dialog {
+  background: #fff;
+  border-radius: 4px;
+  margin: auto;
+  padding: 46px 36px;
+  position: relative;
+  width: 693px;
+}
+
+#block-benefits_request_form-dialog .modal-dialog .title img,
+p {
+  float: left;
+  margin-bottom: 0;
+}
+
+#block-benefits_request_form-dialog .modal-dialog .title p.modal-title {
+  font-size: 16px;
+  float: left;
+  margin-bottom: 0;
+  margin-left: 10px;
+}
+#block-benefits_request_form-dialog .modal-dialog .title p.modal-title strong {
+  color: #55356a;
+  font-weight: bold;
+}
+
+#block-benefits_request_form-dialog .modal-dialog .title {
+  align-items: center;
+  display: flex;
+  float: left;
+  width: 100%;
+}
+
+#block-benefits_request_form-dialog .modal-content .modal-description {
+  font-size: 16px;
+  display: flex;
+  padding: 10px 28px;
+}
+
+#block-benefits_request_form-dialog .modal-content .modal-footer {
+  display: flex;
+}
+
+#block-benefits_request_form-dialog .modal-content .modal-footer a {
+  border: 2px solid #55356a;
+  border-radius: 3px;
+  color: #55356a;
+  display: flex;
+  font-size: 14px;
+  font-weight: bold;
+  margin-left: auto;
+  margin-top: 100px;
+  padding: 15px 18px;
+}
+
+#block-benefits_request_form-dialog .modal-content .modal-footer a:hover {
+  background-color: #55356a;
+  border: 2px solid #55356a;
+  border-radius: 3px;
+  color: #fff;
+  display: flex;
+  font-size: 14px;
+  font-weight: bold;
+  margin-left: auto;
+  margin-top: 100px;
+  padding: 15px 18px;
+}
+
+#block-benefits_request_form-dialog a.close-modal-btn {
+  color: #55356a;
+  display: flex;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#block-benefits_request_form-dialog .modal-close {
+  position: absolute;
+  right: 26px;
+  top: 22px;
+}
